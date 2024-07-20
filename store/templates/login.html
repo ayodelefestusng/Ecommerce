@@ -1,0 +1,13 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<form method ='POST' class = "mt-5 col-6  " > 
+    {% csrf_token %}
+    
+    {{form}}  <!--  {{form.as_p}} form is compulsory variable For login when use class template ,   -->
+
+    <button type="submit" class="btn btn-primary col-lg-2">Login</button>
+    <form> 
+      
+{% endblock content %}
